@@ -1,4 +1,4 @@
-from telegram.ext import Updater
+from telegram.ext import Updater import  telegram.ext.Updater import telegram.ext.Dispatcher
 updater = Updater(token='1285306305:AAHuPNLroWn6JU4ocZegsQQ7pTooyegB1eI', use_context=True)
 import logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
