@@ -10,7 +10,7 @@ import feedparser
 
 BOT_TOKEN = '1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI'
 CHANNEL_ID = '-1001114081400' # @bot_channel_name
-FEED_URL = '' # https://something.com/feeds/rss.xml
+FEED_URL = 'https://malayalam.oneindia.com/rss/malayalam-malappuram-fb.xml' # https://something.com/feeds/rss.xml
 
 
 def send_message(message):
