@@ -21,7 +21,7 @@ Data.mature_enabled_users(nsfw_ids)
 # =================================================== End of caches ===================================================
 
 # Bot Token taken by @BotFather
-TOKEN = 1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI
+TOKEN = "1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI"
 
 
 # Listener to see when new messages arrives
