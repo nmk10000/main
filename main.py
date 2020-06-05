@@ -33,11 +33,7 @@ def main():
         if published_20_minutes_ago:
             send_message(entry.links[0].href)
             print(entry.links[0].href)
-
- updater.start_polling()
-    updater.idle()
-    conn.close()
-
+            
                        
 if __name__ == "__main__":
     while(True):
