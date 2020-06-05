@@ -1,6 +1,6 @@
 # Read more about setting it up
 # https://medium.com/@ljmocic/make-telegram-bot-for-notifying-about-new-rss-feed-items-4cfbcc37f4fd
-
+from telegram.ext import Updater
 from datetime import timedelta, datetime
 from dateutil import parser
 from pprint import pprint
@@ -11,6 +11,9 @@ import feedparser
 BOT_TOKEN = '1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI'
 CHANNEL_ID = '-1001114081400' # @bot_channel_name
 FEED_URL = 'https://malayalam.oneindia.com/rss/malayalam-malappuram-fb.xml' # https://something.com/feeds/rss.xml
+
+from telegram.ext import Updater
+updater = Updater(token='1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI', use_context=True)
 
 
 def send_message(message):
