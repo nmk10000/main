@@ -1,20 +1,42 @@
-import bs4
-import parser
-#main variables
-TOKEN = "1296488130:AAH_Qi3WpsvlHy8Q9A-CEqib1TLjSxIw0kI"
-bot = telebot.TeleBot(TOKEN)
-#handlers
-@bot.message_handler(commands=['start', 'go'])
-def start_handler(message):
-    bot.send_message(message.chat.id, 'Привет, когда я вырасту, я буду парсить заголовки с хабра')
-@bot.message_handler(content_types=['text'])
-def text_handler(message):
-    text = message.text.lower()
-    chat_id = message.chat.id
-    if text == "привет":
-        bot.send_message(chat_id, 'Привет, я бот - парсер хабра.')
-    elif text == "как дела?":
-        bot.send_message(chat_id, 'Хорошо, а у тебя?')
-    else:
-        bot.send_message(chat_id, 'Простите, я вас не понял :(')
-bot.polling()
+from telegram import Message, Chat, Update, Bot, MessageEntity
+from telegram import ParseMode, ReplyKeyboardRemove, ReplyKeyboardMarkup
+from telegram.ext import CommandHandler, run_async, Filters
+from telegram.utils.helpers import escape_markdown, mention_html
+
+
+import random
+
+
+
+
+
+
+from telegram.ext import Updater, CommandHandler
+
+Token = "1353108206:AAFUorULABdLOhh3tsxPmQAxQMs3vtmGemw"
+
+RUN_STRINGS = ('hzhsh','nmk','hsjsj')
+
+nmm = random.choice(RUN_STRINGS)
+
+def hello(update, context):
+    update.message.reply_text(
+        'Hello {}'.format(update.message.from_user.first_name))
+
+def hi(update, context):
+    update.message.reply_text((random.choice(RUN_STRINGS)) .format(update.message.from_user.first_name))
+        
+        
+        
+
+
+
+updater = Updater(Token, use_context=True)
+
+updater.dispatcher.add_handler(CommandHandler('start', hello))
+
+updater.dispatcher.add_handler(CommandHandler('help', hi))
+
+
+updater.start_polling()
+updater.idle()
