@@ -9,7 +9,7 @@ from telegram.ext import Updater, CommandHandler
 
 
 
-Token = "1285306305:AAGV3V7WO_w-RERgTfmhVJCmp8hYjr4ZBeE"
+Token = "1353108206:AAFUorULABdLOhh3tsxPmQAxQMs3vtmGemw"
 
 mess = ('''🔰Hotstar VIP Account🔰
 ————————————————
