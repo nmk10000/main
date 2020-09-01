@@ -1,9 +1,3 @@
-from telegram import Message, Chat, Update, Bot, MessageEntity
-from telegram import ParseMode, ReplyKeyboardRemove, ReplyKeyboardMarkup
-from telegram.ext import CommandHandler, run_async, Filters
-from telegram.utils.helpers import escape_markdown, mention_html
-
-
 import random
 
 
@@ -13,20 +7,101 @@ import random
 
 from telegram.ext import Updater, CommandHandler
 
-Token = "1353108206:AAFUorULABdLOhh3tsxPmQAxQMs3vtmGemw"
 
-RUN_STRINGS = ('hzhsh','nmk','hsjsj')
 
-nmm = random.choice(RUN_STRINGS)
+Token = "1285306305:AAGV3V7WO_w-RERgTfmhVJCmp8hYjr4ZBeE"
+
+mess = ('''🔰Hotstar VIP Account🔰
+————————————————
+Email :- lokesh_eca@yahoo.co.in
+
+Password :- https://gplinks.co/tSs6FC
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- atiface1992@gmail.com
+
+Password :- https://gplinks.co/tSs6FC
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- anandsinha65@gmail.com
+
+Password :- https://gplinks.co/fZUCR1
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- sujikrishnan.95@gmail.com
+
+Password :- https://gplinks.co/UL3aac4
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- harshbaberwal@gmail.com
+
+Password :- https://gplinks.co/H7UD
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- zakkamwvr@gmail.com
+
+Password :- https://gplinks.co/Iymo
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- shrishailbhat@gmail.com
+
+Password :- https://gplinks.co/YRGw9LHY
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- singh.pratyush6@gmail.com
+
+Password :- https://gplinks.co/EOt9I0wb
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- ayaankatoch@gmail.com
+
+Password :- https://gplinks.co/2xDSmtvz
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''' ,'''🔰Hotstar VIP Account🔰
+————————————————
+Email :- iinfi1@gmail.com
+
+Password :- https://gplinks.co/Jnawa87Y
+
+Please don't Change Password
+
+Send screenshot to :- @Darkpromoter ''')
+
 
 def hello(update, context):
     update.message.reply_text(
-        'Hello {}'.format(update.message.from_user.first_name))
+        'Hello {}'.format(update.message.from_user.first_name, ))
+
 
 def hi(update, context):
-    update.message.reply_text((random.choice(RUN_STRINGS)) .format(update.message.from_user.first_name))
-        
-        
+    update.message.reply_text(format(random.choice(mess)))
+
         
 
 
